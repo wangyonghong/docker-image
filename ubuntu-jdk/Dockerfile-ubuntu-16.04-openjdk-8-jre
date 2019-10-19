@@ -1,4 +1,6 @@
 FROM ubuntu:16.04
 
-COPY sources-16.04.list /etc/apt/sources.list
+ENV LANG C.UTF-8
+
 RUN apt update && apt install -y openjdk-8-jre
+COPY sources-16.04.list /etc/apt/sources.list
