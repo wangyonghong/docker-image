@@ -1,0 +1,4 @@
+FROM ubuntu:16.04
+
+COPY sources-16.04.list /etc/apt/sources.list
+RUN apt update && apt install -y openjdk-11-jre-headless
