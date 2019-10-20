@@ -31,6 +31,35 @@ Naming Strategy: centos-[7|8]-openjdk-[8|11][-headless]
 
 - [`centos-8-openjdk-11-headless`](https://github.com/0xl2oot/docker-image/blob/master/c/Dockerfile-centos-8-openjdk-8-headless)
 
+
+## centos-tool
+
+### Link
+[https://hub.docker.com/r/yonghongwang/centos-tool](https://hub.docker.com/r/yonghongwang/centos-tool)
+
+### Docker Pull Command
+
+```sh
+docker pull yonghongwang/centos-tool:tag
+```
+
+### Supported tags and respective Dockerfile links
+
+Naming Strategy: centos-[7|8][-][tool]
+
+- [`centos-7`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-7)
+
+- [`centos-7-openjdk-8`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-7-openjdk-8)
+
+- [`centos-7-openjdk-11`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-7-openjdk-11)
+
+- [`centos-8`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-8)
+
+- [`centos-8-openjdk-8`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-8-openjdk-8)
+
+- [`centos-8-openjdk-11`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-8-openjdk-11)
+
+
 ## ubuntu-jdk
 
 ### Link
