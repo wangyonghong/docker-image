@@ -1,0 +1,5 @@
+FROM centos:7
+
+ENV LANG en_US.utf8
+
+RUN yum install -y java-11-openjdk-headless
