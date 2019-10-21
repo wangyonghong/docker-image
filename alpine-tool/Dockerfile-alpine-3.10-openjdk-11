@@ -1,6 +1,6 @@
 FROM alpine:3.10
 
-RUN apk add vim htop nmap lsof curl busybox-extras openjdk11-jdk
+RUN apk add vim htop nmap curl busybox-extras openjdk11-jdk
 
 COPY repositories-3.10 /etc/apk/repositories
 COPY .vimrc /root/.vimrc

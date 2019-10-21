@@ -1,6 +1,6 @@
 FROM alpine:3.10
 
-RUN apk add vim htop nmap lsof curl busybox-extras openjdk11-jdk
+RUN apk add vim htop nmap curl busybox-extras openjdk11-jdk
 RUN apk add tzdata && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo "Asia/Shanghai" > /etc/timezone
     
