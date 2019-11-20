@@ -2,8 +2,9 @@ FROM centos:7
 
 ENV LANG en_US.utf8
 
-RUN yum install -y epel-release
-RUN yum update -y && yum install -y vim htop net-tools telnet nmap lsof wget && yum clean all
+COPY Centos-7.repo /etc/yum.repos.d/CentOS-Base.repo
+COPY epel-7.repo /etc/yum.repos.d/epel.repo
 
+RUN yum update -y && yum install -y fontconfig vim htop net-tools telnet nmap lsof wget && yum clean all && yum makecache
 
 COPY .vimrc /root/.vimrc
