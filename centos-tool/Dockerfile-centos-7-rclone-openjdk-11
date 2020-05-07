@@ -8,6 +8,8 @@ COPY epel-7.repo /etc/yum.repos.d/epel.repo
 RUN rpm --import /etc/pki/rpm-gpg/RPM* && \
 yum update -y && yum install -y deltarpm && \
 yum install -y fontconfig vim htop net-tools telnet \
-nmap lsof wget unzip mysql ftp nfs-utils && yum clean all && yum makecache
+nmap lsof wget unzip mysql ftp nfs-utils java-11-openjdk && \
+curl https://rclone.org/install.sh | bash && \
+yum clean all && yum makecache
 
 COPY .vimrc /root/.vimrc
