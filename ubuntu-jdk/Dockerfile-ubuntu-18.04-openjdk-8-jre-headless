@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-# yonghongwang/ubuntu:18.04-openjdk-8-jre-headless
+# yonghongwang/ubuntu-jdk:18.04-openjdk-8-jre-headless
 
 ENV LANG C.UTF-8
 

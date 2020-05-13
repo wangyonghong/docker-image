@@ -1,5 +1,5 @@
 FROM centos:7
-# yonghongwang/centos:7-openjdk-8
+# yonghongwang/centos-jdk:7-openjdk-8
 
 ENV LANG en_US.utf8
 

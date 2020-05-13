@@ -1,5 +1,5 @@
 FROM centos:8
-# yonghongwang/centos:8-openjdk-8-headless
+# yonghongwang/centos-jdk:8-openjdk-8-headless
 
 ENV LANG en_US.utf8
 

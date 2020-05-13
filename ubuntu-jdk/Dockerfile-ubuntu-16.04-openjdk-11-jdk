@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-# yonghongwang/ubuntu:16.04-openjdk-11-jdk
+# yonghongwang/ubuntu-jdk:16.04-openjdk-11-jdk
 
 ENV LANG C.UTF-8
 

@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-# yonghongwang/ubuntu:14.04-openjdk-8-jdk
+# yonghongwang/ubuntu-jdk:14.04-openjdk-8-jdk
 
 ENV LANG C.UTF-8
 

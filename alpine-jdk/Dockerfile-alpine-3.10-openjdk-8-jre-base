@@ -1,5 +1,5 @@
 FROM alpine:3.10
-# yonghongwang/apline:3.10-openjdk-8-jre-base
+# yonghongwang/apline-jdk:3.10-openjdk-8-jre-base
 
 COPY repositories-3.10 /etc/apk/repositories
 
