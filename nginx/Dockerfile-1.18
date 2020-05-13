@@ -60,7 +60,7 @@ RUN set -x \
             && apt-get build-dep -y $nginxPackages \
             && ( \
                 cd "$tempDir" \
-                && DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" \
+                && DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)  --with-stream" \
                     apt-get source --compile $nginxPackages \
             ) \
 # we don't remove APT lists here because they get re-downloaded and removed later
