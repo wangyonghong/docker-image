@@ -180,3 +180,38 @@ Naming Strategy: ubuntu-[18.04][-][tool]
 - [`ubuntu-18.04-openjdk-8-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-tool/Dockerfile-ubuntu-18.04-openjdk-8-jdk)
 
 - [`ubuntu-18.04-openjdk-11-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-tool/Dockerfile-ubuntu-18.04-openjdk-11-jdk)
+
+
+
+
+## nginx
+
+### Link
+[https://hub.docker.com/r/yonghongwang/nginx](https://hub.docker.com/r/yonghongwang/nginx)
+
+### Docker Pull Command
+
+```sh
+docker pull yonghongwang/nginx:tag
+```
+
+### Supported tags and respective Dockerfile links
+
+- [`1.18`](https://github.com/0xl2oot/docker-image/blob/master/nginx/Dockerfile-nginx-1.18)
+
+- [`1.16`](https://github.com/0xl2oot/docker-image/blob/master/nginx/Dockerfile-nginx-1.16)
+
+## rabbitmq
+
+### Link
+[https://hub.docker.com/r/yonghongwang/rabbitmq](https://hub.docker.com/r/yonghongwang/rabbitmq)
+
+### Docker Pull Command
+
+```sh
+docker pull yonghongwang/rabbitmq:tag
+```
+
+### Supported tags and respective Dockerfile links
+
+- [`3.8`](https://github.com/0xl2oot/docker-image/blob/master/rabbi/Dockerfile-rabbitmq-3.8)
