@@ -16,7 +16,7 @@ set cursorline
 set hlsearch
 
 " 自适应不同语言的智能缩进
-filetype indent on
+" filetype indent on
 " 将制表符扩展为空格
 set expandtab
 

@@ -1,5 +1,6 @@
 FROM alpine:3.10
-
-RUN apk add openjdk8-jre
+# yonghongwang/apline:3.10-openjdk-8-jre
 
 COPY repositories-3.10 /etc/apk/repositories
+
+RUN apk add openjdk8-jre

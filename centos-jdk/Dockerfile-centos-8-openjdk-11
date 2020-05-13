@@ -1,5 +1,14 @@
-FROM centos:7
+FROM centos:8
+# yonghongwang/centos:8-openjdk-11
 
 ENV LANG en_US.utf8
 
-RUN yum update -y && yum install -y java-11-openjdk && yum clean all
+COPY Centos-8.repo /etc/yum.repos.d/CentOS-Base.repo
+
+RUN yum install -y https://mirrors.aliyun.com/epel/epel-release-latest-8.noarch.rpm \
+&& sed -i 's|^#baseurl=https://download.fedoraproject.org/pub|baseurl=https://mirrors.aliyun.com|' /etc/yum.repos.d/epel* \
+&& sed -i 's|^metalink|#metalink|' /etc/yum.repos.d/epel*
+
+RUN yum update -y \
+&& yum install -y java-11-openjdk \
+&& yum clean all

@@ -1,9 +1,15 @@
 FROM centos:8
+# yonghongwang/centos-tool:8-openjdk-11
 
 ENV LANG en_US.utf8
 
-RUN yum install -y epel-release
-RUN yum update -y && yum install -y fontconfig vim htop net-tools telnet nmap lsof wget java-11-openjdk && yum clean all
-
-
+COPY Centos-8.repo /etc/yum.repos.d/CentOS-Base.repo
 COPY .vimrc /root/.vimrc
+
+RUN yum install -y https://mirrors.aliyun.com/epel/epel-release-latest-8.noarch.rpm \
+&& sed -i 's|^#baseurl=https://download.fedoraproject.org/pub|baseurl=https://mirrors.aliyun.com|' /etc/yum.repos.d/epel* \
+&& sed -i 's|^metalink|#metalink|' /etc/yum.repos.d/epel*
+
+RUN yum update -y \
+&& yum install -y fontconfig vim htop net-tools telnet lsof wget java-11-openjdk \
+&& yum clean all

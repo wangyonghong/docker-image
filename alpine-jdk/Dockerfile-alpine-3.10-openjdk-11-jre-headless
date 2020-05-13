@@ -1,5 +1,6 @@
 FROM alpine:3.10
-
-RUN apk add openjdk11-jre-headless
+# yonghongwang/apline:3.10-openjdk-11-jre-headless
 
 COPY repositories-3.10 /etc/apk/repositories
+
+RUN apk add openjdk11-jre-headless

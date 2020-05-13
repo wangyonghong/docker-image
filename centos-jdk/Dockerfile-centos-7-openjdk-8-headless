@@ -1,5 +1,11 @@
 FROM centos:7
+# yonghongwang/centos:7-openjdk-8-headless
 
 ENV LANG en_US.utf8
 
-RUN yum update -y && yum install -y java-1.8.0-openjdk-headless && yum clean all
+COPY Centos-7.repo /etc/yum.repos.d/CentOS-Base.repo
+COPY epel-7.repo /etc/yum.repos.d/epel.repo
+
+RUN yum update -y \
+&& yum install -y java-1.8.0-openjdk-headless \
+&& yum clean all
