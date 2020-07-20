@@ -11,23 +11,6 @@
 docker pull yonghongwang/alpine-jdk:tag
 ```
 
-### Supported tags and respective Dockerfile links
-
-Naming Strategy: alpine-[3.10]-openjdk-[8|11]-[version]
-
-- [`alpine-3.10-openjdk-8`](https://github.com/0xl2oot/docker-image/blob/master/alpine-jdk/Dockerfile-alpine-3.10-openjdk-8)
-
-- [`alpine-3.10-openjdk-8-jre`](https://github.com/0xl2oot/docker-image/blob/master/alpine-jdk/Dockerfile-alpine-3.10-openjdk-8-jre)
-
-- [`alpine-3.10-openjdk-8-jre-base`](https://github.com/0xl2oot/docker-image/blob/master/alpine-jdk/Dockerfile-alpine-3.10-openjdk-8-jre-base)
-
-- [`alpine-3.10-openjdk-11-jdk`](https://github.com/0xl2oot/docker-image/blob/master/alpine-jdk/Dockerfile-alpine-3.10-openjdk-11-jdk)
-
-- [`alpine-3.10-openjdk-11-jre`](https://github.com/0xl2oot/docker-image/blob/master/alpine-jdk/Dockerfile-alpine-3.10-openjdk-11-jre)
-
-- [`alpine-3.10-openjdk-11-jre-headless`](https://github.com/0xl2oot/docker-image/blob/master/alpine-jdk/Dockerfile-alpine-3.10-openjdk-11-jre-headless)
-
-
 ## alpine-tool
 
 ### Link
@@ -38,15 +21,6 @@ Naming Strategy: alpine-[3.10]-openjdk-[8|11]-[version]
 ```sh
 docker pull yonghongwang/alpine-tool:tag
 ```
-
-### Supported tags and respective Dockerfile links
-
-Naming Strategy: alpine-[3.10][-][tool]
-
-- [`alpine-3.10`](https://github.com/0xl2oot/docker-image/blob/master/alpine-tool/Dockerfile-alpine-3.10)
-
-- [`alpine-3.10-openjdk-8`](https://github.com/0xl2oot/docker-image/blob/master/alpine-tool/Dockerfile-alpine-3.10-openjdk-8)
-
 
 ## centos-jdk
 
@@ -59,27 +33,6 @@ Naming Strategy: alpine-[3.10][-][tool]
 docker pull yonghongwang/centos-jdk:tag
 ```
 
-### Supported tags and respective Dockerfile links
-
-Naming Strategy: centos-[7|8]-openjdk-[8|11][-headless]
-
-- [`centos-7-openjdk-8`](https://github.com/0xl2oot/docker-image/blob/master/centos-jdk/Dockerfile-centos-7-openjdk-8)
-
-- [`centos-7-openjdk-8-headless`](https://github.com/0xl2oot/docker-image/blob/master/centos-jdk/Dockerfile-centos-7-openjdk-8-headless)
-
-- [`centos-7-openjdk-11`](https://github.com/0xl2oot/docker-image/blob/master/centos-jdk/Dockerfile-centos-7-openjdk-11)
-
-- [`centos-7-openjdk-11-headless`](https://github.com/0xl2oot/docker-image/blob/master/centos-jdk/Dockerfile-centos-7-openjdk-8-headless)
-
-- [`centos-8-openjdk-8`](https://github.com/0xl2oot/docker-image/blob/master/centos-jdk/Dockerfile-centos-8-openjdk-8)
-
-- [`centos-8-openjdk-8-headless`](https://github.com/0xl2oot/docker-image/blob/master/centos-jdk/Dockerfile-centos-8-openjdk-8-headless)
-
-- [`centos-8-openjdk-11`](https://github.com/0xl2oot/docker-image/blob/master/centos-jdk/Dockerfile-centos-8-openjdk-11)
-
-- [`centos-8-openjdk-11-headless`](https://github.com/0xl2oot/docker-image/blob/master/centos-jdk/Dockerfile-centos-8-openjdk-8-headless)
-
-
 ## centos-tool
 
 ### Link
@@ -90,23 +43,6 @@ Naming Strategy: centos-[7|8]-openjdk-[8|11][-headless]
 ```sh
 docker pull yonghongwang/centos-tool:tag
 ```
-
-### Supported tags and respective Dockerfile links
-
-Naming Strategy: centos-[7|8][-][tool]
-
-- [`centos-7`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-7)
-
-- [`centos-7-openjdk-8`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-7-openjdk-8)
-
-- [`centos-7-openjdk-11`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-7-openjdk-11)
-
-- [`centos-8`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-8)
-
-- [`centos-8-openjdk-8`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-8-openjdk-8)
-
-- [`centos-8-openjdk-11`](https://github.com/0xl2oot/docker-image/blob/master/centos-tool/Dockerfile-centos-8-openjdk-11)
-
 
 ## ubuntu-jdk
 
@@ -119,47 +55,6 @@ Naming Strategy: centos-[7|8][-][tool]
 docker pull yonghongwang/ubuntu-jdk:tag
 ```
 
-### Supported tags and respective Dockerfile links
-
-Naming Strategy: ubuntu-[18.04|16.04|14.04]-openjdk-[8|11]-[jdk|jre|jre-headless]
-
-- [`ubuntu-18.04-openjdk-11-jre-headless`, `latest`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-18.04-openjdk-11-jre-headless)
-
-- [`ubuntu-18.04-openjdk-11-jre`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-18.04-openjdk-11-jre)
-
-- [`ubuntu-18.04-openjdk-11-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-18.04-openjdk-11-jdk)
-
-- [`ubuntu-16.04-openjdk-11-jre-headless`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-16.04-openjdk-11-jre-headless)
-
-- [`ubuntu-16.04-openjdk-11-jre`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-16.04-openjdk-11-jre)
-
-- [`ubuntu-16.04-openjdk-11-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-16.04-openjdk-11-jdk)
-
-- [`ubuntu-14.04-openjdk-11-jre-headless`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-14.04-openjdk-11-jre-headless)
-
-- [`ubuntu-14.04-openjdk-11-jre`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-14.04-openjdk-11-jre)
-
-- [`ubuntu-14.04-openjdk-11-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-14.04-openjdk-11-jdk)
-
-- [`ubuntu-18.04-openjdk-8-jre-headless`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-18.04-openjdk-8-jre-headless)
-
-- [`ubuntu-18.04-openjdk-8-jre`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-18.04-openjdk-8-jre)
-
-- [`ubuntu-18.04-openjdk-8-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-18.04-openjdk-8-jdk)
-
-- [`ubuntu-16.04-openjdk-8-jre-headless`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-16.04-openjdk-8-jre-headless)
-
-- [`ubuntu-16.04-openjdk-8-jre`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-16.04-openjdk-8-jre)
-
-- [`ubuntu-16.04-openjdk-8-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-16.04-openjdk-8-jdk)
-
-- [`ubuntu-14.04-openjdk-8-jre-headless`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-14.04-openjdk-8-jre-headless)
-
-- [`ubuntu-14.04-openjdk-8-jre`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-14.04-openjdk-8-jre)
-
-- [`ubuntu-14.04-openjdk-8-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-jdk/Dockerfile-ubuntu-14.04-openjdk-8-jdk)
-
-
 ## ubuntu-tool
 
 ### Link
@@ -170,19 +65,6 @@ Naming Strategy: ubuntu-[18.04|16.04|14.04]-openjdk-[8|11]-[jdk|jre|jre-headless
 ```sh
 docker pull yonghongwang/ubuntu-tool:tag
 ```
-
-### Supported tags and respective Dockerfile links
-
-Naming Strategy: ubuntu-[18.04][-][tool]
-
-- [`ubuntu-18.04`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-tool/Dockerfile-ubuntu-18.04)
-
-- [`ubuntu-18.04-openjdk-8-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-tool/Dockerfile-ubuntu-18.04-openjdk-8-jdk)
-
-- [`ubuntu-18.04-openjdk-11-jdk`](https://github.com/0xl2oot/docker-image/blob/master/ubuntu-tool/Dockerfile-ubuntu-18.04-openjdk-11-jdk)
-
-
-
 
 ## nginx
 
@@ -195,12 +77,6 @@ Naming Strategy: ubuntu-[18.04][-][tool]
 docker pull yonghongwang/nginx:tag
 ```
 
-### Supported tags and respective Dockerfile links
-
-- [`1.18`](https://github.com/0xl2oot/docker-image/blob/master/nginx/Dockerfile-nginx-1.18)
-
-- [`1.16`](https://github.com/0xl2oot/docker-image/blob/master/nginx/Dockerfile-nginx-1.16)
-
 ## rabbitmq
 
 ### Link
@@ -211,7 +87,3 @@ docker pull yonghongwang/nginx:tag
 ```sh
 docker pull yonghongwang/rabbitmq:tag
 ```
-
-### Supported tags and respective Dockerfile links
-
-- [`3.8`](https://github.com/0xl2oot/docker-image/blob/master/rabbi/Dockerfile-rabbitmq-3.8)
