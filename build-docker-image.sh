@@ -7,7 +7,7 @@ DIRNAME=`dirname $1`
 BASENAME=`basename $1`
 IMAGE_NAME=`cat $1 | sed -n '2p' | awk '{print($2)}'`
 
-if [[ ${BASENAME} != Dockerfile* ]]; then
+if [[ ${BASENAME} != *Dockerfile ]]; then
     exit 0
 fi
 
