@@ -15,7 +15,6 @@ docker build ${DIRNAME} -f $1 -t ${IMAGE_NAME}
 
 USERNAME=${DOCKER_HUB_USERNAME}
 PASSWORD=${DOCKER_HUB_PASSWORD}
-REGISTRY=https://index.docker.io
 
-docker login -u ${USERNAME} -p ${PASSWORD} ${REGISTRY}
+docker login -u ${USERNAME} -p ${PASSWORD}
 docker push ${IMAGE_NAME}
