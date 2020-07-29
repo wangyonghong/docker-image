@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - master
+
+name: Build Docker Images
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: docker version
+      - run: docker info
+      - run: sh actions-build.sh
+    env:
+      DOCKER_HUB_USERNAME: ${{secrets.DOCKER_HUB_USERNAME}}
+      DOCKER_HUB_PASSWORD: ${{secrets.DOCKER_HUB_PASSWORD}}

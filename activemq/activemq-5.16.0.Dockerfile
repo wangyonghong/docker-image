@@ -10,11 +10,11 @@ ENV ACTIVEMQ_HOME /opt/activemq
 # RUN curl "https://archive.apache.org/dist/activemq/$ACTIVEMQ_VERSION/$ACTIVEMQ-bin.tar.gz" -o $ACTIVEMQ-bin.tar.gz
 RUN curl "https://mirrors.aliyun.com/apache/activemq/$ACTIVEMQ_VERSION/$ACTIVEMQ-bin.tar.gz" -o $ACTIVEMQ-bin.tar.gz
 
-RUN tar xzf $ACTIVEMQ-bin.tar.gz -C  /opt && \
-    ln -s /opt/$ACTIVEMQ $ACTIVEMQ_HOME && \
-    useradd -r -M -d $ACTIVEMQ_HOME activemq && \
-    chown -R activemq:activemq /opt/$ACTIVEMQ && \
-    chown -h activemq:activemq $ACTIVEMQ_HOME 
+RUN tar xzf $ACTIVEMQ-bin.tar.gz -C /opt \
+&& ln -s /opt/$ACTIVEMQ $ACTIVEMQ_HOME \
+&& useradd -r -M -d $ACTIVEMQ_HOME activemq \
+&& chown -R activemq:activemq /opt/$ACTIVEMQ \
+&& chown -h activemq:activemq $ACTIVEMQ_HOME 
 
 USER activemq
 
