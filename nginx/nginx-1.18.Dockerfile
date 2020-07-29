@@ -5,7 +5,7 @@ FROM debian:buster-slim
 LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
 
 ENV NGINX_VERSION   1.18.0
-ENV NJS_VERSION     0.4.0
+ENV NJS_VERSION     0.4.2
 ENV PKG_RELEASE     1~buster
 
 RUN set -x \
@@ -60,7 +60,7 @@ RUN set -x \
             && apt-get build-dep -y $nginxPackages \
             && ( \
                 cd "$tempDir" \
-                && DEB_BUILD_OPTIONS="nocheck parallel=$(nproc) --with-stream" \
+                && DEB_BUILD_OPTIONS="nocheck parallel=$(nproc) --with-stream --with-openssl=/usr/bin/openssl" \
                     apt-get source --compile $nginxPackages \
             ) \
 # we don't remove APT lists here because they get re-downloaded and removed later
