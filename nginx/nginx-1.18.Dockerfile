@@ -1,5 +1,8 @@
 FROM debian:buster-slim
+# yonghongwang/nginx:latest
 # yonghongwang/nginx:1.18
+# yonghongwang/nginx:1.18.0
+
 # from https://github.com/nginxinc/docker-nginx/blob/master/stable/buster/Dockerfile
 
 LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
