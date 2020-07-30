@@ -18,7 +18,7 @@ fi
 
 IMAGE_NAME=${IMAGE_NAMES[0]}
 
-# docker build ${DIRNAME} -f $1 -t ${IMAGE_NAME}
+docker build ${DIRNAME} -f $1 -t ${IMAGE_NAME}
 for((i=1;i<${#IMAGE_NAMES[@]};i++)) do
 docker tag $IMAGE_NAME ${IMAGE_NAMES[i]}
 done;
